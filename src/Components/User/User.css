@@ -1,0 +1,17 @@
+.user {
+    background: #d2caca;
+    padding: 20px;
+    border: 3px solid #7b3c3c;
+}
+
+.user h2 {
+    color: brown;
+}
+
+.user h3 {
+    color: chocolate;
+}
+
+.user p {
+    color: darkgoldenrod;
+}
