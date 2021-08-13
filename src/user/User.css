@@ -1,0 +1,14 @@
+
+.users{
+   border: 3px solid #480d0d;
+   background: #462626;
+}
+.user {
+   border: 1px solid black;
+}
+.user >h3{
+   color: darkgoldenrod;
+}
+.user {
+   color: chocolate;
+}

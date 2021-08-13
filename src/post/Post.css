@@ -1,0 +1,14 @@
+.post{
+background: #34411b;
+    color: silver;
+    border:2px solid #480d0d;
+
+}
+.post>h5{
+    color: antiquewhite;
+}
+.post>h3{
+    color: olive;
+}.post>p{
+    color: coral;
+}

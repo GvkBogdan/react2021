@@ -1,0 +1,10 @@
+.comment{
+    border: 2px solid #3d1616;
+
+}
+.comment>h5{
+    color: antiquewhite;
+}
+.comment>p{
+    color: coral;
+}
