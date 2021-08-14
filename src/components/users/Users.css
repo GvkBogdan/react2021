@@ -1,0 +1,19 @@
+.wrap{
+    display: flex;
+}
+
+.wrap > div{
+    width: 50%;
+}
+
+.user-box{
+    background: darkolivegreen;
+    color: burlywood;
+
+}
+
+.chose-one{
+    background: darkslategrey;
+    color: darkgoldenrod;
+
+}
