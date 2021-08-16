@@ -1,10 +1,10 @@
+
 export default function Posts({post}) {
 
   return (
     <div>
 
-      {post.title}
-
+      <h4>{post.title}</h4>
 
     </div>
   );

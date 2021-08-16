@@ -4,6 +4,7 @@ export default function User({item,choserUser}) {
     choserUser(item);
   }
 
+
   return (
     <div>
       {item.id} - {item.name}

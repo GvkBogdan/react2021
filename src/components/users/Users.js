@@ -15,9 +15,11 @@ export default function Users() {
     getUsers().then(value => setUsers([...value]))
   },[])
 
-  const choserUser = (u) =>{
-    setUser({...u})
-    getPosts(u.id).then(value => setPosts([...value]))
+  const choserUser = (usr,pos) =>{
+    setUser({...usr})
+
+    getPosts(usr.id).then(value => setPosts([...value]))
+
   }
 
   return (
@@ -33,23 +35,17 @@ export default function Users() {
             posts.map(value => <Posts post={value} key={value.id}/>)
           }
         </div>
+
+
       </div>
 
       {
         user && <div className={'chose-one'}>
-        {JSON.stringify(user.username)}
+        {JSON.stringify(user.name)}{JSON.stringify(posts)}
+
 
       </div>
       }
-
-      {
-        posts && <div className={'chose-one'}>
-          {JSON.stringify(posts)}
-
-        </div>
-      }
-
-
 
     </div>
   );
