@@ -1,0 +1,15 @@
+.wrap{
+    display: flex;
+
+}
+.posts-box{
+    background: #672020;
+    color: darkgoldenrod;
+    width: 70%;
+    padding: 5px;
+}
+.posts-details{
+    padding: 20px;
+    background: #c26d17;
+    color: #154d4d;
+}
