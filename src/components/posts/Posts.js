@@ -1,11 +1,13 @@
-
 export default function Posts({post}) {
 
-  return (
-    <div>
+    return (
+        <div>
 
-      <h4>{post.title}</h4>
+            <h4>Title of post - User - {post.userId}</h4>
+            <p><i>-{post.title} </i></p>
+            <h5>Body of post:</h5>
+            <p><i>-{post.body}</i></p>
 
-    </div>
-  );
+        </div>
+    );
 }

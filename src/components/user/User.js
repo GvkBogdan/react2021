@@ -1,16 +1,20 @@
-export default function User({item,choserUser}) {
+export default function User({user, choserUser}) {
 
-  const oncliclUserChose = () => {
-    choserUser(item);
-  }
-
-
-  return (
-    <div>
-      {item.id} - {item.name}
-      <button onClick={oncliclUserChose}> Info of post </button>
-    </div>
+    const oncliclUserChose = () => {
+        choserUser(user);
+    }
 
 
-  );
+    return (
+        <div>
+
+            <ul>
+                <li>{user.id} - {user.name}</li>
+            </ul>
+            <br/>
+            <button onClick={oncliclUserChose}> Info of post</button>
+        </div>
+
+
+    );
 }

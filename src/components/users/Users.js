@@ -6,47 +6,44 @@ import Posts from "../posts/Posts";
 
 export default function Users() {
 
-  let [users, setUsers] = useState([]);
-  let [user, setUser] = useState(null)
-  let [posts, setPosts] = useState([])
+    let [users, setUsers] = useState([]);
+    let [user, setUser] = useState(null)
+    let [post, setPost] = useState([])
 
 
-  useEffect(() => {
-    getUsers().then(value => setUsers([...value]))
-  },[])
+    useEffect(() => {
+        getUsers().then(value => setUsers([...value]))
+    }, [])
 
-  const choserUser = (usr,pos) =>{
-    setUser({...usr})
+    const choserUserPost = (usr) => {
+        setUser({...usr})
 
-    getPosts(usr.id).then(value => setPosts([...value]))
+        getPosts(usr.id).then(value => setPost([...value]))
 
-  }
+    }
 
-  return (
-    <div className={'wrap'}>
+    return (
+        <div className={'wrap'}>
 
-      <div className={'user-box'}>
-        {
-          users.map(value => <User key={value.id} item={value}choserUser ={choserUser}/>)
+            <div className={'user-box'}>
+                {
+                    users.map(value => <User key={value.id} user={value} choserUser={choserUserPost}/>)
 
-        }
-        <div>
-          {
-            posts.map(value => <Posts post={value} key={value.id}/>)
-          }
+                }
+
+            </div>
+
+            {
+                user && <div className={'chose-one'}>
+                    {JSON.stringify(` Name of User - ${user.name}`)}{JSON.stringify()}
+                    {
+                        post.map(value => <Posts post={value} key={value.id}/>)
+                    }
+
+                </div>
+
+            }
+
         </div>
-
-
-      </div>
-
-      {
-        user && <div className={'chose-one'}>
-        {JSON.stringify(user.name)}{JSON.stringify(posts)}
-
-
-      </div>
-      }
-
-    </div>
-  );
+    );
 }
