@@ -1,0 +1,19 @@
+.form-car{
+    background: darkolivegreen;
+    color: chocolate;
+    font-size: 16px;
+}
+
+.form-car>form>input{
+    background: #2b3816;
+    color: chocolate;
+    font-size: 16px;
+}
+
+.form-car>form>button{
+    background: #2b3816;
+    color: chocolate;
+    font-size: 16px;
+    width: 100px;
+    border: 2px solid #bb6a06;
+}
