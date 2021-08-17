@@ -1,9 +1,11 @@
 import CarForm from "./components/carForm/CarForm";
+import SuperForm from "./components/superform/SuperForm";
 
 export default function App() {
   return (
     <div>
-    <CarForm/>
+    {/*<CarForm/>*/}
+      <SuperForm/>
 
 
     </div>
