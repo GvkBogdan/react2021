@@ -16,5 +16,4 @@ const getCars = () => {
         .then(value => value.json())
 }
 
-
 export {saveCar, getCars};

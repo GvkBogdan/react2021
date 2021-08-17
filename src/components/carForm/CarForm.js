@@ -3,29 +3,20 @@ import {useEffect, useState} from "react";
 import Car from "../car/Car";
 import './CarForm.css'
 
-
 export default function CarForm() {
 
-  // let [model, setModel] = useState('enter model')
-  // let [price, setPrice] = useState('enter price')
-  // let [year, setYear] = useState('enter year')
+    let onFormSubmit = (e) => {
+        e.preventDefault()
 
-    let onFormSubmit = (e) =>{
-      e.preventDefault()
-      // console.log(e.target.id.value);
-      // console.log(e.target.model.value);
-      // console.log(e.target.price.value);
-      // console.log(e.target.year.value);
-
-      let carSave = {model: e.target.model.value,price: e.target.price.value, year: e.target.year.value};
-      console.log(carSave)
+        let carSave = {model: e.target.model.value, price: e.target.price.value, year: e.target.year.value};
+        console.log(carSave)
 
         saveCar(carSave);
 
     };
 
 
-    let[cars, setCars] = useState([])
+    let [cars, setCars] = useState([])
 
     useEffect(() => {
         getCars().then(value => setCars([...value]))
