@@ -1,0 +1,21 @@
+
+.user-box{
+    background: brown;
+    padding: 10px;
+    border: darkred 2px solid;
+    display: grid;
+    grid-template-columns: 2fr 3fr 5fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+.user-box>h3{
+    color: #de952c;
+}
+.user-box>h4{
+    color: #99d295;
+}
+.user-box>ul{
+    color: #6fb68f;
+}

@@ -1,0 +1,14 @@
+.post-box{
+    background: chocolate;
+    padding: 10px;
+    border: 2px solid darkslategrey;
+    color: #22381e;
+
+
+}.post-box > h3 {
+    color: #1f4f2b;
+}
+
+.post-box > h4 {
+     color: #1c3f3f;
+ }
